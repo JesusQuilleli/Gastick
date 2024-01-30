@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modulo 3</title>
+    <script src="Js/Modulo 3.js"></script>
+    <link rel="stylesheet" href="Css/StyleModulo3.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+        <div class="btn-menu">
+            <label for="btn-menu">☰</label>
+        </div>
+            <div class="logo">
+                <h2>GaStick</h2>
+            </div>
+            <nav class="menu">
+            </nav>
+        </div>
+    </header>
+    <div class="capa"></div>
+    <!--	--------------->
+    <input type="checkbox" id="btn-menu">
+    <div class="container-menu">
+    <div class="cont-menu">
+        <nav>
+            <a href="Index.html">Inicio</a>
+            <a href="Modulo 1.html">Categorias</a>
+            <a href="Modulo 2.html">Registro</a>
+            <a href="Modulo 3.html">Reportes</a>
+        </nav>
+        <label for="btn-menu">✖️</label>
+    </div>
+    </div>
+    
+<h1>Módulo III</h1>
+
+<div id="container">
+
+    <div class="group">
+        <label for="Input">Fecha Inicial</label>
+        <input type="date" name="" id="Fech">
+    </div>
+
+    <div class="group">
+        <label for="Input">Fecha Final</label>
+        <input type="date" name="" id="Fech2">
+    </div>
+
+    <button id="Boton" onclick="Reports()">Generar Reporte</button>
+
+</div>
+
+<table class="Tab" id="teibol2" ></table>
+<table class="Tab" id="teibolMonto" ></table>
+</body>
+
+<style>
+
+
+
+table {
+    width: 64%;
+    margin: auto;
+    text-align: center;
+}
+
+.Tab th {                                                       
+        text-align: center;
+        }
+
+    td,th{
+        border: solid rgb(255, 255, 255) 1px;
+        padding: 10px;
+        text-align: center;
+        font-size: 25px;
+        color: white;
+        
+        }
+
+    h1{
+        text-align: center;
+        margin-top: 70px;
+        font-size: 45px;
+        font-family: 'Montserrat Alternates', sans-serif;
+        font-weight: bold;
+        font-style: italic;
+        letter-spacing: 6px;
+        color: #ffffff;
+        }
+
+    form{
+        text-align: center;
+        }
+
+    .a{
+        background-color: rgb(0, 0, 0);
+        padding-bottom: 25px;
+        }
+
+    #envio{
+        font-size: 22px;
+        background-color: aliceblue;
+        }
+
+    #envio:hover{
+        background-color: transparent;
+        border: 2px solid rgb(107, 44, 44); 
+        color: rgb(255, 0, 0);
+        }
+
+#container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 50px;
+        }
+
+        #containerSelect{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 40px;
+        }
+
+        .group select{
+            appearance: none;
+            padding: 8px;
+            border: 1px solid #CCC;
+            border-radius: 4px;
+            background-color: #fff;
+            color: #333;
+            font-size: 14px;
+            margin: 4px;
+            margin-right: 9px;
+        }
+
+        .select label{
+            font-weight: bold;
+            font-size: 18px;
+           
+        }
+
+        .group{
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 20px;
+        }
+
+        .group label{
+            
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #ffffff;
+            font-size: 18px;
+        }
+
+        .group input{
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+            margin-right: 10px;
+        }
+
+        #Boton{
+            padding: 18 px 30 px;
+            background-color: #000000;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 18px;
+            margin-right: 10px;
+        }
+
+        #Boton:hover{
+            background-color: #565e56;
+        }
+
+
+</style>
+</html>
